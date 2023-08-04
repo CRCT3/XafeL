@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: SafeArea(
         child: ListView(
-          padding: EdgeInsets.only(left: 10, right: 10),
+          padding: const EdgeInsets.only(left: 10, right: 10),
           children: [
             SizedBox(
               height: resHeight * 0.025,
@@ -71,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               child: Container(
                 height: resHeight * 0.125,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: ksecondarycolor,
                     borderRadius: BorderRadius.all(Radius.circular(25))),
                 child: Padding(
@@ -87,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             "June 14, 2020",
                             style: Theme.of(context).textTheme.bodyLarge,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -102,10 +102,10 @@ class _HomeScreenState extends State<HomeScreen> {
                             "15%",
                             style: Theme.of(context).textTheme.titleLarge,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
-                          Icon(
+                          const Icon(
                             Icons.arrow_upward,
                             color: Colors.white,
                           )
@@ -123,11 +123,11 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       color: ksecondarycolor,
                       borderRadius: BorderRadius.all(Radius.circular(25))),
-                  child: Padding(
-                    padding: const EdgeInsets.all(15.0),
+                  child: const Padding(
+                    padding: EdgeInsets.all(15.0),
                     child: Icon(
                       Icons.arrow_upward,
                       color: kprimarycolor,
@@ -136,11 +136,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       color: ksecondarycolor,
                       borderRadius: BorderRadius.all(Radius.circular(25))),
-                  child: Padding(
-                    padding: const EdgeInsets.all(15.0),
+                  child: const Padding(
+                    padding: EdgeInsets.all(15.0),
                     child: Icon(
                       Icons.arrow_downward,
                       color: kprimarycolor,
@@ -149,11 +149,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       color: ksecondarycolor,
                       borderRadius: BorderRadius.all(Radius.circular(25))),
-                  child: Padding(
-                    padding: const EdgeInsets.all(15.0),
+                  child: const Padding(
+                    padding: EdgeInsets.all(15.0),
                     child: Icon(
                       Icons.food_bank,
                       color: kprimarycolor,
@@ -162,11 +162,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       color: ksecondarycolor,
                       borderRadius: BorderRadius.all(Radius.circular(25))),
-                  child: Padding(
-                    padding: const EdgeInsets.all(15.0),
+                  child: const Padding(
+                    padding: EdgeInsets.all(15.0),
                     child: Icon(
                       Icons.charging_station_rounded,
                       color: kprimarycolor,
@@ -188,7 +188,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Container(
                   width: resWidth * 0.25,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       color: ksecondarycolor,
                       borderRadius: BorderRadius.all(Radius.circular(25))),
                   child: Padding(
@@ -206,7 +206,7 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(
               height: resHeight * 0.025,
             ),
-            Container(
+            SizedBox(
               height: resHeight * 0.3,
               child: BarChart(
                 mainBarData(),
@@ -221,7 +221,7 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 10, right: 10, bottom: 30),
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               color: ksecondarycolor,
               borderRadius: BorderRadius.all(Radius.circular(15))),
           child: Padding(
@@ -390,10 +390,10 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       titlesData: FlTitlesData(
         show: true,
-        rightTitles: AxisTitles(
+        rightTitles: const AxisTitles(
           sideTitles: SideTitles(showTitles: false),
         ),
-        topTitles: AxisTitles(
+        topTitles: const AxisTitles(
           sideTitles: SideTitles(showTitles: false),
         ),
         bottomTitles: AxisTitles(
@@ -403,7 +403,7 @@ class _HomeScreenState extends State<HomeScreen> {
             reservedSize: 38,
           ),
         ),
-        leftTitles: AxisTitles(
+        leftTitles: const AxisTitles(
           sideTitles: SideTitles(
             showTitles: false,
           ),
@@ -413,7 +413,7 @@ class _HomeScreenState extends State<HomeScreen> {
         show: false,
       ),
       barGroups: showingGroups(),
-      gridData: FlGridData(show: false),
+      gridData: const FlGridData(show: false),
     );
   }
 
