@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Xafe',
       theme: ThemeData(
           primarySwatch: Colors.blue,
@@ -71,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Text(
           'You have pressed the button $_counter times.',
-          style: TextStyle(fontSize: 20),
+          style: const TextStyle(fontSize: 20),
         ),
       ),
       floatingActionButton: FloatingActionButton(
